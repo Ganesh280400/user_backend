@@ -19,4 +19,10 @@ public class UserServiceImpl implements UserService{
 		return repo.findAll();
 	}
 
+	
+	public UserDto addUser(UserDto userdto) {
+		return repo.save(userdto);
+		
+	}
+
 }
